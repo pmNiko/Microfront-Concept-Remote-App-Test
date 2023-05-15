@@ -7,7 +7,7 @@ import { Typography } from "@mui/material";
 const CustomButton = () => {
   return (
     <div className="button-remote">
-      <Stack direction="row" spacing={1}>
+      <Stack direction="row" spacing={1} p={2} border={1}>
         <Typography variant="subtitle2" pt={1} color="green">
           Remote Buttons
         </Typography>

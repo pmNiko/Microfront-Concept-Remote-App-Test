@@ -1,10 +1,8 @@
-import "./App.css";
 import reactLogo from "./assets/react.svg";
-import CustomButton from "./components/button/CustomButton";
-import RemoteComponent from "./components/testRemoteComponet/TestRemoteComponent";
+import tsLogo from "./assets/typescript.svg";
 import viteLogo from "/vite.svg";
 
-function App() {
+const Title = () => {
   return (
     <>
       <div>
@@ -14,13 +12,13 @@ function App() {
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
+        <a href="https://typescript.org" target="_blank">
+          <img src={tsLogo} className="logo" alt="React logo" />
+        </a>
       </div>
-      <h1>Vite + React</h1>
-      <RemoteComponent />
-
-      <CustomButton />
+      <h1>Vite + React + TS</h1>
     </>
   );
-}
+};
 
-export default App;
+export default Title;

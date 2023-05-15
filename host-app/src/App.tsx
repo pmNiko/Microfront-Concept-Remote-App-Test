@@ -1,50 +1,27 @@
-import { Suspense, lazy, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import tsLogo from "./assets/typescript.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-
+import { Suspense, lazy } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import ResourceNotAvailable from "./ResourceNotAvailable";
+import Title from "./Title";
+import "./App.css";
 
-// const TestRemoteComponent = lazy(() => import("remoteApp/TestRemoteComponent"));
+const TestRemoteComponent = lazy(() => import("remoteApp/TestRemoteComponent"));
 const CustomButton = lazy(() => import("remoteApp/CustomButton"));
 // import RemoteComponent from 'remoteApp/RemoteComponent'
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-        <a href="https://typescript.org" target="_blank">
-          <img src={tsLogo} className="logo" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React + TS</h1>
-      <Suspense fallback={<div>Loading Remote Component...</div>}>
-        {/* <TestRemoteComponent /> */}
+      <Title />
+      {/* Render Module Federation */}
+      <Suspense fallback={<div>Cargando los modulos remotos</div>}>
+        <ErrorBoundary fallback={<ResourceNotAvailable />}>
+          <TestRemoteComponent />
+        </ErrorBoundary>
+        <div style={{ marginBottom: "3rem" }}></div>
         <ErrorBoundary fallback={<ResourceNotAvailable />}>
           <CustomButton />
         </ErrorBoundary>
       </Suspense>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }

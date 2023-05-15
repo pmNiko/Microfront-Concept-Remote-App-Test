@@ -9,10 +9,11 @@ export default defineConfig({
     federation({
       name: "hostApp",
       remotes: {
-        remoteApp: {
-          external: `Promise.resolve('http://localhost:5001/assets/remoteEntry.js')`,
-          externalType: "promise",
-        },
+        remoteApp: "http://localhost:5001/assets/remoteEntry.js",
+        // remoteApp: {
+        //   external: `Promise.resolve('http://localhost:5001/assets/remoteEntry.js')`,
+        //   externalType: "promise",
+        // },
       },
       shared: ["react", "react-dom"],
     }),
