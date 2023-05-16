@@ -2,13 +2,22 @@
 
 import { Button, Stack, Typography } from "@mui/material";
 import { useState } from "react";
+import Loading from "../Loading/Loading";
 
 const RemoteComponent = () => {
-  const [data, setData] = useState<any>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [data, setData] = useState<Array<any>>();
 
   const handleClick = async () => {
-    const data = await fetch("https://mui.com/material-ui/react-button/");
+    setIsLoading(true);
+    console.log("Carga de datos");
+
+    const data = await fetch(
+      "https://jsonplaceholder.typicode.com/todos/1"
+    ).then((response) => response.json());
+
     setData(data);
+    setIsLoading(false);
   };
   return (
     <div
@@ -36,8 +45,13 @@ const RemoteComponent = () => {
           Generar error
         </Button>
 
-        {data.map((elem: any) => (
-          <p>{elem}</p>
+        {isLoading && <Loading />}
+
+        {data?.map((elem: any, index: number) => (
+          <div key={index}>
+            <p>{elem}</p>
+            {elem.name}
+          </div>
         ))}
       </Stack>
     </div>
