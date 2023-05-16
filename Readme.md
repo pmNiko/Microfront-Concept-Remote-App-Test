@@ -11,4 +11,32 @@
 
 ---
 
-<br/>
+<p align="center" style="margin-top: 4rem" >
+ Application
+</p>
+
+<p align="center" style="margin-top: 3rem">
+    <img alt="App" src="./images/app.png" width="60%"/>
+</p>
+
+<p align="center" style="margin-top: 4rem" >
+ Error de renderizado
+</p>
+
+<p align="center" style="margin-top: 3rem">
+    <img alt="App" src="./images/errorBundary.png" width="60%"/>
+</p>
+
+---
+
+<div align="center" style="background-color: back; margin-top: 4rem; padding: 2rem; boxShadow: 2px 3px 4px 0px rgba(0,0,0,0.4)" width="70%" >
+    <p style="color: white; textAlign: justify">
+        ¿Como funciona ?
+    </p>
+    <p  style="color: blue; textAlign: justify" >
+        La App host o root solamente contiene el encabezado de iconos y el titulo. <br/>
+        Los dos recuadros que vemos son modulos federados a travéz del plugin de Vite, por lo que nos permite importalos de manera remota y utilizalos de la manera tradicional como si de modulos locales se tratara. <br/>
+        De cualquier manera estamos pudiendo utilizar las caracteristicas de Lazy Suspense, las cuales son ofrecidas por el core de React, permitiendo realizar una carga perezosa de los componentes. 
+    </p>
+
+</div>
