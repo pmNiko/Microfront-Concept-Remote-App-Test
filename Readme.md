@@ -30,7 +30,7 @@
 
 <br/>
 
-<p align="center" style="margin-top: 4rem" >
+<p align="center" style="color: blue; margin-top: 4rem" >
  Application
 </p>
 
@@ -44,7 +44,7 @@
 
 <br/>
 
-<p align="center" style="margin-top: 6rem" >
+<p align="center" style="color: blue; margin-top: 6rem" >
  Error de renderizado
 </p>
 
