@@ -86,5 +86,12 @@
 - Ingrese a remote-app
   - Instale los modulos de node: $ yarn install
   - Despliegue el proyecto: $ yarn deploy
+  - Ahora para comprobar que se esta sirviendo el chunck ingrese a:
+    - http://localhost:5001/assets/remoteEntry.js
+- Ahora ya puede ingresar a la carpeta /host-app
+  - Instale los modulos de node: $ yarn install
+  - Despliegue el proyecto: $ yarn dev
+  - Ahora dirigase a:
+    - http://localhost:5000
 
 ---
