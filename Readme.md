@@ -35,7 +35,7 @@
 </p>
 
 <p align="center" style="margin-top: 3rem">
-    <img alt="App" src="./images/app.png" width="60%"/>
+    <img alt="App" src="./images/app.png" width="400px"/>
 </p>
 
 <br/>
@@ -49,7 +49,7 @@
 </p>
 
 <p align="center" style="margin-top: 3rem">
-    <img alt="App" src="./images/errorBundary.png" width="60%"/>
+    <img alt="App" src="./images/errorBundary.png" width="400px"/>
 </p>
 
 ---
