@@ -31,7 +31,7 @@
 
 <div align="center" style="background-color: black; margin-top: 4rem; padding: 2rem; boxShadow: 2px 3px 4px 0px rgba(0,0,0,0.4)" width="70%" >
     <p style="color: white; textAlign: justify">
-        ¿Como funciona ?
+        ¿Como funciona?
     </p>
     <p  style="color: blue; textAlign: justify" >
         La App host o root solamente contiene el encabezado de iconos y el titulo. <br/>
