@@ -36,6 +36,12 @@
     <img alt="App" src="./images/app.png" width="60%"/>
 </p>
 
+<br/>
+
+---
+
+<br/>
+
 <p align="center" style="margin-top: 6rem" >
  Error de renderizado
 </p>
@@ -58,6 +64,8 @@
     </p>
 
 </div>
+
+<br/>
 
 ---
 
