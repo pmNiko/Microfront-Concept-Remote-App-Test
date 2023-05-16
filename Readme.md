@@ -29,11 +29,11 @@
 
 ---
 
-<div align="center" style="background-color: black !important; margin-top: 4rem; padding: 2rem; boxShadow: 2px 3px 4px 0px rgba(0,0,0,0.4)" width="50%" >
+<div align="center" style=" margin-top: 4rem; padding: 2rem; boxShadow: 2px 3px 4px 0px rgba(0,0,0,0.4)" width="50%" >
     <p style="color: blue; textAlign: justify">
         ¿Como funciona?
     </p>
-    <p  style="color: white; textAlign: justify" >
+    <p  style="textAlign: justify" >
         La App host o root solamente contiene el encabezado de iconos y el titulo. <br/>
         Los dos recuadros que vemos son modulos federados a travéz del plugin de Vite, por lo que nos permite importalos de manera remota y utilizalos de la manera tradicional como si de modulos locales se tratara. <br/>
         De cualquier manera estamos pudiendo utilizar las caracteristicas de Lazy Suspense, las cuales son ofrecidas por el core de React, permitiendo realizar una carga perezosa de los componentes. 
