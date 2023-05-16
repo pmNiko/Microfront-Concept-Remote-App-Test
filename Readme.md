@@ -1,5 +1,15 @@
 # Micro Frontend - Implementación de concepto
 
+<br/>
+
+<p align="center">
+  <a href="http://staging.smandes.gov.ar/gitea/Pruebas/vite-mf-react-ts/wiki">Lea más acerca de su implementación</a>
+</p>
+
+<br/>
+
+---
+
 | Tecnología                       | Documentación                                                                  | Descripción                                                  |
 | -------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------ |
 | React                            | https://react.dev                                                              | Interfaces de usuario                                        |
@@ -36,7 +46,8 @@
     <p  style="textAlign: justify" >
         La App host o root solamente contiene el encabezado de iconos y el titulo. <br/>
         Los dos recuadros que vemos son modulos federados a travéz del plugin de Vite, por lo que nos permite importalos de manera remota y utilizalos de la manera tradicional como si de modulos locales se tratara. <br/>
-        De cualquier manera estamos pudiendo utilizar las caracteristicas de Lazy Suspense, las cuales son ofrecidas por el core de React, permitiendo realizar una carga perezosa de los componentes. 
+        De cualquier manera estamos pudiendo utilizar las caracteristicas de Lazy Suspense, las cuales son ofrecidas por el core de React, permitiendo realizar una carga perezosa de los componentes. <br/>
+        Por último hacemos uso de la libreria react-error-bundary que nos permite manejar los errores de render de una manera mas amigable con el usuario final. 
     </p>
 
 </div>
