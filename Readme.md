@@ -1,4 +1,4 @@
-# Implementación de concepto Micro Frontend
+# Micro Frontend - Implementación de concepto
 
 | Tecnología                       | Documentación                                                                  | Descripción                                                  |
 | -------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------ |
