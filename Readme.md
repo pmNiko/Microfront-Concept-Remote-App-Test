@@ -19,7 +19,7 @@
     <img alt="App" src="./images/app.png" width="60%"/>
 </p>
 
-<p align="center" style="margin-top: 4rem" >
+<p align="center" style="margin-top: 6rem" >
  Error de renderizado
 </p>
 
@@ -29,7 +29,7 @@
 
 ---
 
-<div align="center" style="background-color: back; margin-top: 4rem; padding: 2rem; boxShadow: 2px 3px 4px 0px rgba(0,0,0,0.4)" width="70%" >
+<div align="center" style="background-color: black; margin-top: 4rem; padding: 2rem; boxShadow: 2px 3px 4px 0px rgba(0,0,0,0.4)" width="70%" >
     <p style="color: white; textAlign: justify">
         ¿Como funciona ?
     </p>
