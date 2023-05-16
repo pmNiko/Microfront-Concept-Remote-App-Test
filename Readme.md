@@ -1,4 +1,11 @@
-# Micro Frontend - Implementación de concepto
+<h1 align="center" >
+    Micro Frontend - Implementación de concepto
+</h1>
+
+<p align="center">
+    <img alt="Microfrontend" src="./images/mf.png" width="40%"/>
+
+</p>
 
 <br/>
 
@@ -43,7 +50,7 @@
     <p style="color: blue; textAlign: justify">
         ¿Como funciona?
     </p>
-    <p  style="textAlign: justify" >
+    <p>
         La App host o root solamente contiene el encabezado de iconos y el titulo. <br/>
         Los dos recuadros que vemos son modulos federados a travéz del plugin de Vite, por lo que nos permite importalos de manera remota y utilizalos de la manera tradicional como si de modulos locales se tratara. <br/>
         De cualquier manera estamos pudiendo utilizar las caracteristicas de Lazy Suspense, las cuales son ofrecidas por el core de React, permitiendo realizar una carga perezosa de los componentes. <br/>
@@ -51,3 +58,23 @@
     </p>
 
 </div>
+
+---
+
+<p align="center"  style="color: blue; margin-top: 3rem">
+    Puesta en marcha 
+</p>
+
+<p>
+    Descargar el proyecto 
+</p>
+
+- esto genera un directorio vite-mf-react-ts/
+- Dentro encontrará dos directorios y extras del proyecto
+  - /remote-app
+  - /host-app
+- Ingrese a remote-app
+  - Instale los modulos de node: $ yarn install
+  - Despliegue el proyecto: $ yarn deploy
+
+---
