@@ -28,7 +28,7 @@ export default function Loading() {
   React.useEffect(() => {
     const timer = setInterval(() => {
       setProgress((prevProgress) =>
-        prevProgress >= 100 ? 10 : prevProgress + 20
+        prevProgress >= 100 ? 10 : prevProgress + 25
       );
     }, 800);
     return () => {

@@ -7,26 +7,34 @@ import { TodoResponse } from "./interface";
 
 export default () => {
   const [isLoading, setIsLoading] = useState(false);
+  const [isErrorFetching, setIsErrorFetching] = useState(false);
   const [data, setData] = useState<Array<TodoResponse>>([]);
   const [dataError, setDataError] = useState<Array<TodoResponse>>([]);
 
   const handleClickError = async () => {
-    const data = await fetch("https://jsonplaceholder.typicode.com/error").then(
-      (response) => response.json()
-    );
+    setIsErrorFetching(true);
+    setTimeout(async () => {
+      const data = await fetch(
+        "https://jsonplaceholder.typicode.com/error"
+      ).then((response) => response.json());
 
-    setDataError(data);
+      setDataError(data);
+
+      setIsErrorFetching(false);
+    }, 3000);
   };
 
   const handleClickSuccess = async () => {
     setIsLoading(true);
 
-    const data = await fetch(
-      "https://jsonplaceholder.typicode.com/posts?_limit=4"
-    ).then((response) => response.json());
+    setTimeout(async () => {
+      const data = await fetch(
+        "https://jsonplaceholder.typicode.com/posts?_limit=4"
+      ).then((response) => response.json());
 
-    setData(data);
-    setIsLoading(false);
+      setData(data);
+      setIsLoading(false);
+    }, 3000);
   };
 
   return (
@@ -40,6 +48,8 @@ export default () => {
         <Button variant="contained" color="error" onClick={handleClickError}>
           Generar error
         </Button>
+
+        {isErrorFetching && <Loading />}
         {dataError.map((elem: TodoResponse, index: number) => (
           <div key={index}>{elem.title}</div>
         ))}
