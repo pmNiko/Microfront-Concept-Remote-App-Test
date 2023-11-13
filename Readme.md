@@ -9,6 +9,12 @@
 
 <br/>
 
+<p align="center">
+  <a href="https://github.com/pmNiko/Microfront-Concept-Remote-App-Test/wiki">Lea más acerca de su implementación</a>
+</p>
+
+<br/>
+
 ---
 
 | Tecnología                       | Documentación                                                                  | Descripción                                                  |
@@ -31,14 +37,6 @@
 <p align="center" style="margin-top: 3rem">
     <img alt="App" src="./images/parcel1.png" width="600px"/>
 </p>
-
-<br/>
-
-<p align="center">
-  <a href="https://github.com/pmNiko/Microfront-Concept-Remote-App-Test/wiki">Lea más acerca de su implementación</a>
-</p>
-
-<br/>
 
 ---
 
