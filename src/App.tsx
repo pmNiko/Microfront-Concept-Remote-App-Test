@@ -1,8 +1,8 @@
-import "./App.css";
 import reactLogo from "./assets/react.svg";
 import CustomButton from "./components/CustomButton";
-import TestComponent from "./components/TestComponet";
+import TestComponent from "./components/TestComponent";
 import viteLogo from "/vite.svg";
+import "./App.css";
 
 function App() {
   return (

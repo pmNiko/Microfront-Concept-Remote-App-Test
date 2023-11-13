@@ -8,12 +8,6 @@
 </p>
 
 <br/>
-<!-- 
-<p align="center">
-  <a href="http://staging.smandes.gov.ar/gitea/Pruebas/vite-mf-react-ts/wiki">Lea más acerca de su implementación</a>
-</p> -->
-
-<br/>
 
 ---
 
@@ -31,7 +25,7 @@
 <br/>
 
 <p align="center" style="color: blue; margin-top: 4rem" >
- Application
+ Parcel 1 (App - Remote)
 </p>
 
 <p align="center" style="margin-top: 3rem">
@@ -67,19 +61,12 @@
     Descargar el proyecto 
 </p>
 
-- esto genera un directorio vite-mf-react-ts/
-- Dentro encontrará dos directorios y extras del proyecto
-  - /remote-app
-  - /host-app
-- Ingrese a remote-app
+- Inicio
   - Instale los modulos de node: $ yarn install
+  - Despliegue la app en modo dev: $ yarn dev
   - Despliegue el proyecto: $ yarn deploy
   - Ahora para comprobar que se esta sirviendo el chunck ingrese a:
     - http://localhost:5001/assets/remoteEntry.js
-- Ahora ya puede ingresar a la carpeta /host-app
-  - Instale los modulos de node: $ yarn install
-  - Despliegue el proyecto: $ yarn dev
-  - Ahora dirigase a:
-    - http://localhost:5000
+    - el puerto esta expuesto de manera estricta.
 
 ---

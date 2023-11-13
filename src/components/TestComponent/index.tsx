@@ -5,7 +5,7 @@ import { useState } from "react";
 import Loading from "../Loading/Loading";
 import { TodoResponse } from "./interface";
 
-const TestComponent = () => {
+export default () => {
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState<Array<TodoResponse>>([]);
   const [dataError, setDataError] = useState<Array<TodoResponse>>([]);
@@ -67,4 +67,4 @@ const TestComponent = () => {
   );
 };
 
-export default TestComponent;
+// export default TestComponent;
