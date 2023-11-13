@@ -35,22 +35,10 @@
 </p>
 
 <p align="center" style="margin-top: 3rem">
-    <img alt="App" src="./images/app.png" width="400px"/>
+    <img alt="App" src="./images/parcel1.png" width="400px"/>
 </p>
 
 <br/>
-
----
-
-<br/>
-
-<p align="center" style="color: blue; margin-top: 6rem" >
- Error de renderizado
-</p>
-
-<p align="center" style="margin-top: 3rem">
-    <img alt="App" src="./images/errorBundary.png" width="400px"/>
-</p>
 
 ---
 
