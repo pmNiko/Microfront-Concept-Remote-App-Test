@@ -35,7 +35,7 @@
 </p>
 
 <p align="center" style="margin-top: 3rem">
-    <img alt="App" src="./images/parcel1.png" width="400px"/>
+    <img alt="App" src="./images/parcel1.png" width="600px"/>
 </p>
 
 <br/>
