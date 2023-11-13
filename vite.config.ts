@@ -7,10 +7,10 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "remoteApp",
+      name: "mfConceptRemoteAppTest",
       filename: "remoteEntry.js",
       exposes: {
-        "./TestComponent": "./src/components/TestComponent",
+        "./Todos": "./src/components/Todos",
         "./CustomButton": "./src/components/CustomButton",
       },
       shared: ["react", "react-dom"],

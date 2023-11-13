@@ -1,6 +1,6 @@
 import reactLogo from "./assets/react.svg";
 import CustomButton from "./components/CustomButton";
-import TestComponent from "./components/TestComponent";
+import Todos from "./components/Todos";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
@@ -15,8 +15,10 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+
       <h1>Vite + React</h1>
-      <TestComponent />
+
+      <Todos />
 
       <CustomButton />
     </>
