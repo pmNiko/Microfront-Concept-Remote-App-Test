@@ -25,7 +25,7 @@
 <br/>
 
 <p align="center" style="color: blue; margin-top: 4rem" >
- Parcel 1 (App - Remote)
+ Parcel 1 (Remote - App)
 </p>
 
 <p align="center" style="margin-top: 3rem">
@@ -41,10 +41,10 @@
         ¿Como funciona?
     </p>
     <p>
-        La App host o root solamente contiene el encabezado de iconos y el titulo. <br/>
-        Los dos recuadros que vemos son modulos federados a travéz del plugin de Vite, por lo que nos permite importalos de manera remota y utilizalos de la manera tradicional como si de modulos locales se tratara. <br/>
-        De cualquier manera estamos pudiendo utilizar las caracteristicas de Lazy Suspense, las cuales son ofrecidas por el core de React, permitiendo realizar una carga perezosa de los componentes. <br/>
-        Por último hacemos uso de la libreria react-error-bundary que nos permite manejar los errores de render de una manera mas amigable con el usuario final. 
+        El parcel representa un fragmento de la app general, que será inyectado de manera remota al shell o host.
+        <br/> Este será desarrollado de manera pararela a la app shell y posteriormente expuesto para ser absorbido. 
+        <br/> Una de las ventajas de esta estrategia es que nos permite desarrollar de manera vertical sin afectar 
+        al resto de la app. Básicamente consiste en escalar graduelmente nuestra app para hacer crecer sus funcionalidades. 
     </p>
 
 </div>
