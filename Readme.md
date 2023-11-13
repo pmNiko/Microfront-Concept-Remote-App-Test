@@ -8,10 +8,10 @@
 </p>
 
 <br/>
-
+<!-- 
 <p align="center">
   <a href="http://staging.smandes.gov.ar/gitea/Pruebas/vite-mf-react-ts/wiki">Lea más acerca de su implementación</a>
-</p>
+</p> -->
 
 <br/>
 

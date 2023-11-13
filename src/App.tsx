@@ -1,7 +1,7 @@
 import "./App.css";
 import reactLogo from "./assets/react.svg";
-import CustomButton from "./components/button/CustomButton";
-import RemoteComponent from "./components/testRemoteComponet/TestRemoteComponent";
+import CustomButton from "./components/CustomButton";
+import TestComponent from "./components/TestComponet";
 import viteLogo from "/vite.svg";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <RemoteComponent />
+      <TestComponent />
 
       <CustomButton />
     </>
