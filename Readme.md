@@ -98,3 +98,39 @@
     - el puerto esta expuesto de manera estricta.
 
 ---
+
+<br/>
+
+---
+
+<p align="center"  style="color: blue; margin-top: 3rem">
+    Deployar en local
+</p>
+
+- Deploy
+  - Deploy del parcel: $ yarn deploy
+  - Esto genera un build de la app y lo sirve en el puerto 5001 de manera estricta.
+  - Para consumir este parcel se puede lograr mediante la url: "http://localhost:5001/assets/remoteEntry.js"
+  - Ejemplo de config en vite.config.js
+    - remotes: { mfConceptRemoteAppTest: "http://localhost:5001/assets/remoteEntry.js" },
+
+---
+
+<br/>
+
+---
+
+<p align="center"  style="color: blue; margin-top: 3rem">
+    Deployar en producción
+</p>
+
+- Deploy
+  - Deploy del parcel: $ yarn build
+  - Esto genera un build de la app en la carpeta dist
+  - Supongamos que este contenido lo servimos en un directorio de apache
+    - public_html/parcelTest/ <---- .... ---->
+  - Para consumir este parcel se puede lograr mediante la url: "<[domain]><[parcelTest]>/assets/remoteEntry.js"
+
+---
+
+<br/>
