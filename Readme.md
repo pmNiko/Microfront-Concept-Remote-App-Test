@@ -35,7 +35,31 @@
 </p>
 
 <p align="center" style="margin-top: 3rem">
-    <img alt="App" src="./images/parcel1.png" width="600px"/>
+    <img alt="App" src="./images/parcel.png" width="600px"/>
+</p>
+
+---
+
+<br/>
+
+<p align="center" style="color: blue; margin-top: 4rem" >
+ Solicitud de tareas exitosa
+</p>
+
+<p align="center" style="margin-top: 3rem">
+    <img alt="App" src="./images/solicitud-ok.png" width="600px"/>
+</p>
+
+---
+
+<br/>
+
+<p align="center" style="color: blue; margin-top: 4rem" >
+ Solicitud erronea
+</p>
+
+<p align="center" style="margin-top: 3rem">
+    <img alt="App" src="./images/solicitud-error.png" width="600px"/>
 </p>
 
 ---
