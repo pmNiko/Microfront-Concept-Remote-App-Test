@@ -73,13 +73,13 @@
         <br/> Este será desarrollado de manera pararela a la app shell y posteriormente expuesto para ser absorbido. 
         <br/> Una de las ventajas de esta estrategia es que nos permite desarrollar de manera vertical sin afectar 
         al resto de la app. Básicamente consiste en escalar graduelmente nuestra app para hacer crecer sus funcionalidades. 
-        <br/> Para conocer más acerca de su implementación y consumo revise la wiki [aquí](https://github.com/pmNiko/Microfront-Concept-Remote-App-Test/wiki/4%E2%80%90Deploy)
+        <br/> Para conocer más acerca de su implementación y consumo revise la wiki.
     </p>
 
 </div>
 
+- [wiki](https://github.com/pmNiko/Microfront-Concept-Remote-App-Test/wiki/4%E2%80%90Deploy)
+
 <br/>
 
 ---
-
-[aquí](https://github.com/pmNiko/Microfront-Concept-Remote-App-Test/wiki/4%E2%80%90Deploy)
