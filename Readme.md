@@ -75,11 +75,11 @@
         al resto de la app. Básicamente consiste en escalar graduelmente nuestra app para hacer crecer sus funcionalidades. 
         <br/> Para conocer más acerca de su implementación y consumo revise la wiki 
     </p>
-        [aquí](https://github.com/pmNiko/Microfront-Concept-Remote-App-Test/wiki/4%E2%80%90Deploy)
 
 </div>
 
 <br/>
 
 ---
-[Esteban Menendez](https://github.com/ejmenendez)
+
+[aquí](https://github.com/pmNiko/Microfront-Concept-Remote-App-Test/wiki/4%E2%80%90Deploy)
