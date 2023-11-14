@@ -10,8 +10,7 @@ export default defineConfig({
       name: "mfConceptRemoteAppTest",
       filename: "remoteEntry.js",
       exposes: {
-        "./Todos": "./src/components/Todos",
-        "./CustomButton": "./src/components/CustomButton",
+        "./ParcelTest": "./src/pages/ParcelTest",
       },
       shared: ["react", "react-dom"],
     }),

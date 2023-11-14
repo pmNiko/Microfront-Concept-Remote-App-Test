@@ -22,7 +22,11 @@ function LinearProgressWithLabel(
   );
 }
 
-export default function Loading() {
+export default function Loading({
+  color = "primary",
+}: {
+  color?: "primary" | "error";
+}) {
   const [progress, setProgress] = React.useState(10);
 
   React.useEffect(() => {
@@ -38,7 +42,7 @@ export default function Loading() {
 
   return (
     <Box sx={{ width: "100%" }}>
-      <LinearProgressWithLabel value={progress} />
+      <LinearProgressWithLabel value={progress} color={color} />
     </Box>
   );
 }

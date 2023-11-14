@@ -1,6 +1,6 @@
 // src/RemoteComponent.js
 
-import { Button, Stack, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import { useState } from "react";
 import Loading from "../Loading/Loading";
 import { TodoResponse } from "./interface";
@@ -38,28 +38,33 @@ export default () => {
   };
 
   return (
-    <div
-      style={{ border: "1px solid black", padding: "3em", marginBottom: "2em" }}
-    >
-      <Stack direction="column" spacing={2} my={4}>
+    <Box mx={5} mt={5}>
+      <Stack direction="column" spacing={2} alignItems="center">
         <Typography variant="body2">
           Al romperse la ejecución el resto de la app sigue funcionando
         </Typography>
-        <Button variant="contained" color="error" onClick={handleClickError}>
+
+        <Button
+          sx={{ maxWidth: 200, borderRadius: 2 }}
+          variant="contained"
+          color="error"
+          onClick={handleClickError}
+        >
           Generar error
         </Button>
 
-        {isErrorFetching && <Loading />}
+        {isErrorFetching && <Loading color="error" />}
         {dataError.map((elem: TodoResponse, index: number) => (
           <div key={index}>{elem.title}</div>
         ))}
       </Stack>
 
-      <Stack direction="column" spacing={2} mb={4}>
+      <Stack direction="column" spacing={2} mt={4} alignItems="center">
         <Typography variant="body2">
           La solicitud se realiza con éxito
         </Typography>
         <Button
+          sx={{ maxWidth: 200, borderRadius: 2 }}
           variant="contained"
           color="primary"
           onClick={handleClickSuccess}
@@ -73,7 +78,7 @@ export default () => {
           <div key={index}>{elem.title}</div>
         ))}
       </Stack>
-    </div>
+    </Box>
   );
 };
 

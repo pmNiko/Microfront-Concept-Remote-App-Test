@@ -1,12 +1,11 @@
-import "./Button.css";
 import Stack from "@mui/material/Stack";
 import IconButton from "@mui/material/IconButton";
 import Fingerprint from "@mui/icons-material/Fingerprint";
 
 export default () => {
   return (
-    <div className="button-remote">
-      <Stack direction="row" spacing={1} p={2} border={1}>
+    <div>
+      <Stack direction="row" spacing={1} p={2}>
         <IconButton aria-label="fingerprint" color="secondary">
           <Fingerprint />
         </IconButton>
