@@ -73,64 +73,12 @@
         <br/> Este será desarrollado de manera pararela a la app shell y posteriormente expuesto para ser absorbido. 
         <br/> Una de las ventajas de esta estrategia es que nos permite desarrollar de manera vertical sin afectar 
         al resto de la app. Básicamente consiste en escalar graduelmente nuestra app para hacer crecer sus funcionalidades. 
+        <br/> Para conocer más acerca de su implementación y consumo revise la wiki 
     </p>
+        [aquí](https://github.com/pmNiko/Microfront-Concept-Remote-App-Test/wiki/4%E2%80%90Deploy)
 
 </div>
 
 <br/>
 
 ---
-
-<p align="center"  style="color: blue; margin-top: 3rem">
-    Puesta en marcha 
-</p>
-
-<p>
-    Descargar el proyecto 
-</p>
-
-- Inicio
-  - Instale los modulos de node: $ yarn install
-  - Despliegue la app en modo dev: $ yarn dev
-  - Despliegue el proyecto: $ yarn deploy
-  - Ahora para comprobar que se esta sirviendo el chunck ingrese a:
-    - http://localhost:5001/assets/remoteEntry.js
-    - el puerto esta expuesto de manera estricta.
-
----
-
-<br/>
-
----
-
-<p align="center"  style="color: blue; margin-top: 3rem">
-    Deployar en local
-</p>
-
-- Deploy
-  - Deploy del parcel: $ yarn deploy
-  - Esto genera un build de la app y lo sirve en el puerto 5001 de manera estricta.
-  - Para consumir este parcel se puede lograr mediante la url: "http://localhost:5001/assets/remoteEntry.js"
-  - Ejemplo de config en vite.config.js
-    - remotes: { mfConceptRemoteAppTest: "http://localhost:5001/assets/remoteEntry.js" },
-
----
-
-<br/>
-
----
-
-<p align="center"  style="color: blue; margin-top: 3rem">
-    Deployar en producción
-</p>
-
-- Deploy
-  - Deploy del parcel: $ yarn build
-  - Esto genera un build de la app en la carpeta dist
-  - Supongamos que este contenido lo servimos en un directorio de apache
-    - public_html/parcelTest/ <---- .... ---->
-  - Para consumir este parcel se puede lograr mediante la url: "<[domain]><[parcelTest]>/assets/remoteEntry.js"
-
----
-
-<br/>
