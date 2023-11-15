@@ -17,6 +17,10 @@ export default defineConfig({
     }),
   ],
 
+  server: {
+    cors: { origin: "*" },
+  },
+
   build: {
     modulePreload: false,
     target: "esnext",
