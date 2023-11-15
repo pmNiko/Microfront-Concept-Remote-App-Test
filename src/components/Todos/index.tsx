@@ -104,7 +104,7 @@ export default () => {
           </List>
           {todos.length > 0 && (
             <Button
-              sx={{ mt: 2, mb: 5 }}
+              sx={{ mt: 2, mb: 5, borderRadius: 2 }}
               variant="contained"
               color="secondary"
               onClick={() => setTodos([])}
