@@ -1,4 +1,3 @@
-// vite.config.js
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import federation from "@originjs/vite-plugin-federation";
@@ -17,14 +16,23 @@ export default defineConfig({
     }),
   ],
 
-  server: {
-    cors: { origin: "*", allowedHeaders: ["Access-Control-Allow-Origin"] },
-    headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Headers": "*",
-    },
-  },
+  // server: {
+  //   cors: {
+  //     origin: "*",
+  //     allowedHeaders: "Access-Control-Allow-Origin",
+  //   },
+  //   headers: {
+  //     "Access-Control-Allow-Origin": "*",
+  //   },
+  // },
+
+  // preview: {
+  //   cors: false,
+  //   headers: {
+  //     "Access-Control-Allow-Origin": "*",
+  //     "Access-Control-Allow-Headers": "*",
+  //   },
+  // },
 
   build: {
     modulePreload: false,
