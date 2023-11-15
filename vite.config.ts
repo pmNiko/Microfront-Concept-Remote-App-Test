@@ -19,6 +19,7 @@ export default defineConfig({
 
   server: {
     cors: { origin: "*" },
+    origin: "*",
     headers: {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
