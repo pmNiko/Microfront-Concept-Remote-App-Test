@@ -50,7 +50,7 @@ export default () => {
     <Box mx={5} mt={5}>
       <Divider />
       <Stack direction="column" spacing={2} alignItems="center">
-        <Typography mt={2} variant="body2">
+        <Typography mt={2} variant="caption">
           Maneje el error en el App Shell
         </Typography>
 
@@ -70,7 +70,7 @@ export default () => {
       </Stack>
 
       <Stack direction="column" spacing={2} mt={4} alignItems="center">
-        <Typography variant="body2">
+        <Typography variant="caption">
           La solicitud se realiza con éxito
         </Typography>
         <Button
