@@ -64,6 +64,18 @@
 
 ---
 
+<br/>
+
+<p align="center" style="color: blue; margin-top: 4rem" >
+ Tareas solicitadas
+</p>
+
+<p align="center" style="margin-top: 3rem">
+    <img alt="App" src="./images/tareas.png" width="600px"/>
+</p>
+
+---
+
 <div align="center" style=" margin-top: 4rem; padding: 2rem; boxShadow: 2px 3px 4px 0px rgba(0,0,0,0.4)" width="50%" >
     <p style="color: blue; textAlign: justify">
         ¿Como funciona?

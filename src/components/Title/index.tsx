@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import viteLogo from "/vite.svg";
 import "./Title.css";
 
@@ -25,6 +25,7 @@ export default () => {
         </a>
       </div>
       <h1>Vite + React + TS</h1>
+      <Typography variant="caption">Federación de módulos con vite</Typography>
     </Box>
   );
 };
