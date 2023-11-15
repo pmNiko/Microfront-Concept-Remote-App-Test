@@ -18,15 +18,11 @@ export default defineConfig({
   ],
 
   server: {
-    cors: false,
-    origin: "*",
+    cors: { origin: "*", allowedHeaders: ["Access-Control-Allow-Origin"] },
     headers: {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Headers": "*",
-    },
-    watch: {
-      usePolling: true,
     },
   },
 
