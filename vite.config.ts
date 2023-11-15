@@ -25,6 +25,9 @@ export default defineConfig({
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Headers": "*",
     },
+    watch: {
+      usePolling: true,
+    },
   },
 
   build: {
