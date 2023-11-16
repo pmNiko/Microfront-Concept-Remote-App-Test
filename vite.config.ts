@@ -16,19 +16,6 @@ export default defineConfig({
     }),
   ],
 
-  server: {
-    cors: {
-      origin: "https://microfront-shell.netlify.app",
-      allowedHeaders: ["Access-Control-Allow-Origin"],
-      methods: ["GET", "Headers"],
-      exposedHeaders: ["Access-Control-Allow-Origin"],
-    },
-
-    headers: {
-      "Access-Control-Allow-Origin": "https://microfront-shell.netlify.app",
-    },
-  },
-
   build: {
     modulePreload: false,
     target: "esnext",
