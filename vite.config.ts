@@ -7,8 +7,8 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "mfConceptRemoteAppTest",
-      filename: "remoteEntry.js",
+      name: "mf-parcel",
+      filename: "parcel.js",
       exposes: {
         "./ParcelTest": "./src/pages/ParcelTest",
       },
@@ -16,35 +16,27 @@ export default defineConfig({
     }),
   ],
 
-  server: {
-    cors: true,
-    origin: "https://mf-shell.onrender.com",
-
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-      "Access-Control-Allow-Headers":
-        "X-Requested-With, content-type, Authorization",
-    },
-  },
-
   // server: {
-  //   cors: {
-  //     origin: "*",
-  //     allowedHeaders: "Access-Control-Allow-Origin",
-  //   },
+  //   cors: true,
+  //   origin: "https://mf-shell.onrender.com",
+
   //   headers: {
   //     "Access-Control-Allow-Origin": "*",
+  //     "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+  //     "Access-Control-Allow-Headers":
+  //       "X-Requested-With, content-type, Authorization",
   //   },
   // },
 
+  server: {
+    cors: {
+      origin: false,
+    },
+  },
+
   preview: {
-    cors: true,
     headers: {
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-      "Access-Control-Allow-Headers":
-        "X-Requested-With, content-type, Authorization",
     },
   },
 
