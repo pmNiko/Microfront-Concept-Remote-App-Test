@@ -17,6 +17,9 @@ export default defineConfig({
   ],
 
   server: {
+    cors: true,
+    origin: "https://mf-shell.onrender.com",
+
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
