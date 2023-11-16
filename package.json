@@ -1,5 +1,5 @@
 {
-  "homepage": "https://pmNiko.github.io/mf-parcel",
+  "homepage": "https://pmniko.github.io/Microfront-Concept-Remote-App-Test",
   "name": "remote-app",
   "private": true,
   "version": "1.0.0",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview --port=5001 --strictPort",
     "deploy": "yarn build && yarn preview",
-    "github": "gh-pages -d build"
+    "github": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
