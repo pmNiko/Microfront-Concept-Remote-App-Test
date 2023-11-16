@@ -16,25 +16,14 @@ export default defineConfig({
     }),
   ],
 
-  // server: {
-  //   cors: true,
-  //   origin: "https://mf-shell.onrender.com",
-
-  //   headers: {
-  //     "Access-Control-Allow-Origin": "*",
-  //     "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-  //     "Access-Control-Allow-Headers":
-  //       "X-Requested-With, content-type, Authorization",
-  //   },
-  // },
-
   server: {
     cors: {
-      origin: false,
+      origin: "*",
+      allowedHeaders: ["Access-Control-Allow-Origin"],
+      methods: ["GET", "Headers"],
+      exposedHeaders: ["Access-Control-Allow-Origin"],
     },
-  },
 
-  preview: {
     headers: {
       "Access-Control-Allow-Origin": "*",
     },
