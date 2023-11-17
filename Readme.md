@@ -10,7 +10,7 @@
 <br/>
 
 <p align="center">
-  <a href="https://github.com/pmNiko/Microfront-Concept-Remote-App-Test/wiki">Lea más acerca de su implementación</a>
+  <a href="https://github.com/pmNiko/mfe-parcel/wiki">Lea más acerca de su implementación</a>
 </p>
 
 <br/>
@@ -81,16 +81,35 @@
         ¿Como funciona?
     </p>
     <p>
-        El parcel representa un fragmento de la app general, que será inyectado de manera remota al shell o host.
-        <br/> Este será desarrollado de manera pararela a la app shell y posteriormente expuesto para ser absorbido. 
+        El parcel representa un fragmento de la app general, que será inyectada de manera remota en el App Shell.
+        <br/> Este será desarrollado de manera pararela y posteriormente expuesto para ser consumido. 
         <br/> Una de las ventajas de esta estrategia es que nos permite desarrollar de manera vertical sin afectar 
-        al resto de la app. Básicamente consiste en escalar graduelmente nuestra app para hacer crecer sus funcionalidades. 
+        al resto del equipo. Básicamente consiste en escalar gradualmente el proyecto para lograr los objetivos. 
         <br/> Para conocer más acerca de su implementación y consumo revise la wiki.
     </p>
 
 </div>
 
-- [wiki](https://github.com/pmNiko/Microfront-Concept-Remote-App-Test/wiki/4%E2%80%90Deploy)
+- [wiki deploy](https://github.com/pmNiko/mfe-parcel/wiki/4%E2%80%90Deploy)
+
+<br/>
+
+---
+
+---
+
+<div align="center" style=" margin-top: 4rem; padding: 2rem; boxShadow: 2px 3px 4px 0px rgba(0,0,0,0.4)" width="50%" >
+    <p style="color: blue; textAlign: justify">
+        Aplicación Contenedora
+    </p>
+    <p>
+        App Shell será aquella aplicación que consuma estos parcel o componentes para renderearlos en su layout bajo demanda.
+        En este readme solo se hará referencia al repositorio del mismo para que pueda descargar y verificar su estructura.
+    </p>
+
+</div>
+
+- [wiki](https://github.com/pmNiko/mfe-shell)
 
 <br/>
 

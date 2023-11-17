@@ -6,12 +6,7 @@ import Title from "../../components/Title";
 
 export default () => {
   return (
-    <CardContainer
-      title="Parcel remoto"
-      justifyTarget="space-around"
-      mt={-4}
-      mb={5}
-    >
+    <CardContainer md={8} title="Parcel remoto" justifyTarget="space-around">
       <Box textAlign="center">
         <Title />
 
