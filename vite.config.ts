@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import federation from "@originjs/vite-plugin-federation";
 
 export default defineConfig({
-  base: "/Microfront-Concept-Remote-App-Test/",
+  base: "/mfe-shell/",
   plugins: [
     react(),
     federation({
