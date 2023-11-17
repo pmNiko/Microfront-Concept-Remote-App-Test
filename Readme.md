@@ -55,11 +55,11 @@
 <br/>
 
 <p align="center" style="color: blue; margin-top: 4rem" >
- Solicitud erronea
+ Tareas solicitadas
 </p>
 
 <p align="center" style="margin-top: 3rem">
-    <img alt="App" src="./images/solicitud-error.png" width="600px"/>
+    <img alt="App" src="./images/tareas.png" width="600px"/>
 </p>
 
 ---
@@ -67,11 +67,11 @@
 <br/>
 
 <p align="center" style="color: blue; margin-top: 4rem" >
- Tareas solicitadas
+ Solicitud erronea
 </p>
 
 <p align="center" style="margin-top: 3rem">
-    <img alt="App" src="./images/tareas.png" width="600px"/>
+    <img alt="App" src="./images/solicitud-error.png" width="600px"/>
 </p>
 
 ---
@@ -109,7 +109,7 @@
 
 </div>
 
-- [wiki](https://github.com/pmNiko/mfe-shell)
+- [App Shell](https://github.com/pmNiko/mfe-shell)
 
 <br/>
 
