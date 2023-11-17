@@ -1,6 +1,6 @@
 {
-  "homepage": "https://pmniko.github.io/mfe-parcel/",
-  "name": "remote-app",
+  "homepage": "./",
+  "name": "mfe-parcel",
   "private": true,
   "version": "1.1.1",
   "type": "module",
