@@ -47,7 +47,7 @@ export default () => {
   };
 
   return (
-    <Box mx={5} mt={5}>
+    <Box mx={5}>
       <Divider />
       <Stack direction="column" spacing={2} p={2} alignItems="center">
         <Typography mt={2} variant="caption">

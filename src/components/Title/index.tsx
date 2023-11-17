@@ -4,7 +4,7 @@ import "./Title.css";
 
 export default () => {
   return (
-    <Box mt={-3}>
+    <Box>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -24,8 +24,8 @@ export default () => {
           />
         </a>
       </div>
-      <h1>Vite + React + TS</h1>
-      <Typography variant="caption">Federación de módulos con vite</Typography>
+      {/* <h1>Vite + React + TS</h1> */}
+      {/* <Typography variant="caption">Federación de módulos con vite</Typography> */}
     </Box>
   );
 };

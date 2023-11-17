@@ -5,18 +5,20 @@ import IconButton from "@mui/material/IconButton";
 export default () => {
   const handleTestEvent = () => {
     window.dispatchEvent(
-      new CustomEvent("EVENT_TEST", { detail: { info: "Info test event..." } })
+      new CustomEvent("EVENT_TEST", {
+        detail: { info: "Contenido de prueba enviado desde el parcel." },
+      })
     );
   };
 
-  const handleAddToCart = () => {
+  const handleSendProduct = () => {
     window.dispatchEvent(
-      new CustomEvent("ADD_TO_CART_TEST", {
+      new CustomEvent("EVENT_SEND_PRODUCT", {
         detail: {
-          title: "Product 1",
-          description: "This is a product test",
+          title: "Producto",
+          description: "Este es un producto de prueba.",
           price: 80.9,
-          date: new Date("2014-07-02"),
+          date: new Date("2023-11-17"),
         },
       })
     );
@@ -44,12 +46,12 @@ export default () => {
 
         <Box mx="auto">
           <Typography variant="subtitle2" sx={{ fontWeight: "bold" }} mt={2}>
-            ADD_TO_CART_TEST
+            EVENT_SEND_PRODUCT
           </Typography>
           <IconButton
             aria-label="fingerprint"
             color="secondary"
-            onClick={handleAddToCart}
+            onClick={handleSendProduct}
           >
             <Fingerprint />
           </IconButton>
