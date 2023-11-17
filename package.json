@@ -8,7 +8,8 @@
     "dev": "vite --port=5001 --strictPort",
     "build": "vite build",
     "preview": "vite preview --port=5001 --strictPort",
-    "deploy": "yarn build && yarn preview"
+    "mf-deploy": "yarn build && yarn preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -16,6 +17,7 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.0",
     "@originjs/vite-plugin-federation": "^1.2.2",
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
