@@ -6,10 +6,10 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
+      filename: "mfe-parcel-entry.js",
       name: "mfe-parcel",
-      filename: "parcel.js",
       exposes: {
-        "./ParcelTest": "./src/pages/ParcelTest",
+        "./ParcelTest": "./src/pages/ParcelTest.tsx",
       },
       shared: ["react", "react-dom"],
     }),
@@ -21,5 +21,5 @@ export default defineConfig({
     minify: false,
     cssCodeSplit: false,
   },
-  base: "./",
+  base: "/mfe-parcel/",
 });
