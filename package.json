@@ -9,6 +9,7 @@
     "build": "vite build",
     "preview": "vite preview --port=5001 --strictPort",
     "mf-deploy": "yarn build && yarn preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
