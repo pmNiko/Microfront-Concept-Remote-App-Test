@@ -9,7 +9,7 @@ export default defineConfig({
       filename: "mfe-parcel-entry.js",
       name: "mfe-parcel",
       exposes: {
-        "./ParcelTest": "./src/pages/ParcelTest.tsx",
+        "./ParcelTest": "./src/pages/ParcelTest",
       },
       shared: ["react", "react-dom"],
     }),
