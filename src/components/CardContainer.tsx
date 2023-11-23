@@ -6,6 +6,7 @@ interface Props {
   md?: GridSize;
   lg?: GridSize;
   minHeight?: string;
+  height?: string;
   minWidth?: string;
   justifyTarget?: "space-around" | "space-between" | "space-evenly" | "center";
   showImage?: boolean;
@@ -35,6 +36,7 @@ export const CardContainer = ({
   lg = 4,
   minHeight = "78vh",
   minWidth = "340px",
+  height = "auto",
   showImage = false,
   title = "",
   justifyTarget = "space-between",
@@ -51,6 +53,7 @@ export const CardContainer = ({
             boxShadow: "5px 10px 20px rgba(0, 0, 0, 0.4)",
             borderRadius: "15px 15px 15px 15px ",
             minHeight,
+            height,
             minWidth,
             display: "flex",
             flexDirection: "column",
@@ -73,7 +76,7 @@ export const CardContainer = ({
             {showImage && (
               <Box textAlign="center" mt={6}>
                 <img
-                  src="https://app.sma.gob.ar/imgs/despapelizacion.png"
+                  src="mantenimiento.gif"
                   style={{ opacity: "0.5", height: "10em" }}
                 />
               </Box>

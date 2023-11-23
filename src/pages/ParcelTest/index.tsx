@@ -6,17 +6,22 @@ import Title from "../../components/Title";
 
 export default () => {
   return (
-    <CardContainer md={8} title="Módulo federado" justifyTarget="space-around">
+    <CardContainer
+      md={8}
+      title="Módulo federado"
+      justifyTarget="space-around"
+      minHeight="65vh"
+    >
       <Box textAlign="center">
         <Title />
-        <Divider sx={{ mx: 5, mt: 2 }} />
-      </Box>
-      <Box textAlign="center" mx="auto">
-        <CustomButton />
       </Box>
       <Box textAlign="center">
         <Todos />
       </Box>
+      <Box textAlign="center" mx="auto">
+        <CustomButton />
+      </Box>
+      <Divider sx={{ mx: 5, mb: 2 }} />
     </CardContainer>
   );
 };
