@@ -21,5 +21,5 @@ export default defineConfig({
     minify: false,
     cssCodeSplit: false,
   },
-  base: "/mfe-parcel/",
+  base: "/",
 });
