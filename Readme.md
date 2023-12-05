@@ -15,9 +15,6 @@
 
 <br/>
 
-> .[!TIP]
-> Esta es una nota de prueba.
-
 ---
 
 | Tecnología                       | Documentación                                                                  | Descripción                                                  |
