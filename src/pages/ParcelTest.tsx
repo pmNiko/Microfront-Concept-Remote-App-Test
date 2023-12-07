@@ -1,8 +1,8 @@
 import { Box, Divider } from "@mui/material";
-import { CardContainer } from "../../components/CardContainer";
-import CustomButton from "../../components/CustomButton";
-import Todos from "../../components/Todos";
-import Title from "../../components/Title";
+import CustomButton from "../components/CustomButton";
+import Todos from "../components/Todos";
+import Title from "../components/Title";
+import CardContainer from "../remotes/CardContainer";
 
 export default () => {
   return (
