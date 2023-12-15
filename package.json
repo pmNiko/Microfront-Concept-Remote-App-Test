@@ -2,7 +2,7 @@
   "homepage": "https://github.com/pmNiko/mfe-parcel",
   "name": "mfe-parcel",
   "private": true,
-  "version": "1.5.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --port=5001 --strictPort",
