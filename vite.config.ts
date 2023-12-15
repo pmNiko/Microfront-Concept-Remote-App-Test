@@ -14,9 +14,7 @@ export default defineConfig(({ mode }) => {
         exposes: {
           "./ParcelTest": "./src/pages/ParcelTest",
         },
-        remotes: {
-          "mfe-shell": process.env.VITE_MFE_SHELL,
-        },
+        remotes: {},
         shared: ["react", "react-dom"],
       }),
     ],
